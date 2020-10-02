@@ -1,14 +1,11 @@
-import { left } from "inquirer/lib/utils/readline";
 import React from "react";
-import { Diff } from "../node_modules/diff-sequences";
+import { Diff } from "../node_modules/text-diff/diff";
 
 export default class Page extends React.Component {
   compareOutputs = (event) => {
     event.preventDefault();
     const yourCode = this.userInput.value;
     const correctCode = this.correctOutput.value;
-
-    alert(yourCode);
   };
 
   render() {
