@@ -1,11 +1,15 @@
 import React from "react";
-import { Diff } from "../node_modules/text-diff/diff";
+import diff from "text-diff";
 
 export default class Page extends React.Component {
   compareOutputs = (event) => {
     event.preventDefault();
     const yourCode = this.userInput.value;
     const correctCode = this.correctOutput.value;
+
+    var difference = new diff();
+
+    console.log(difference.prettyHtml(difference.main(yourCode, correctCode)));
   };
 
   render() {
