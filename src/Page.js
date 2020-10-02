@@ -1,5 +1,7 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import diff from "text-diff";
+import OutputViewer from "./OutputViewer";
 
 export default class Page extends React.Component {
   compareOutputs = (event) => {
@@ -11,6 +13,13 @@ export default class Page extends React.Component {
 
     const htmlToRender = difference.prettyHtml(
       difference.main(yourCode, correctCode)
+    );
+
+    ReactDOM.render(
+      <React.StrictMode>
+        <OutputViewer html={htmlToRender} />
+      </React.StrictMode>,
+      document.getElementById("output")
     );
   };
 
