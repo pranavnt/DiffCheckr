@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
+import { InputForm } from "./InputForm";
 import "./App.css";
 
 function App() {
