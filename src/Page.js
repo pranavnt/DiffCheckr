@@ -9,36 +9,40 @@ export default class Page extends React.Component {
 
     var difference = new diff();
 
-    console.log(difference.prettyHtml(difference.main(yourCode, correctCode)));
+    const htmlToRender = difference.prettyHtml(
+      difference.main(yourCode, correctCode)
+    );
   };
 
   render() {
     return (
-      <form
-        onSubmit={this.compareOutputs}
-        style={{ padding: "10px", height: "100vh", width: "100%" }}
-      >
-        <label>Your Input:</label>
-        <br />
-        <input
-          type="textarea"
-          name="userInput"
-          defaultValue="Hi!"
-          ref={(input) => (this.userInput = input)}
-          style={{ width: "49%", height: "90vh", float: "left" }}
-        />
+      <div style={{ width: "100%", height: "100vh" }}>
+        <form
+          onSubmit={this.compareOutputs}
+          style={{ padding: "10px", height: "100vh", width: "100%" }}
+        >
+          <label>Your Input:</label>
+          <br />
+          <input
+            type="textarea"
+            name="userInput"
+            defaultValue="Hi!"
+            ref={(input) => (this.userInput = input)}
+            style={{ width: "49%", height: "90vh", float: "left" }}
+          />
 
-        <label>Correct Output:</label>
-        <br />
-        <input
-          type="textarea"
-          name="correctOutput"
-          defaultValue="Enter the Correct Output here"
-          ref={(input) => (this.correctOutput = input)}
-          style={{ width: "49%", height: "90vh", float: "left" }}
-        />
-        <input type="submit" />
-      </form>
+          <label>Correct Output:</label>
+          <br />
+          <input
+            type="textarea"
+            name="correctOutput"
+            defaultValue="Enter the Correct Output here"
+            ref={(input) => (this.correctOutput = input)}
+            style={{ width: "49%", height: "90vh", float: "left" }}
+          />
+          <input type="submit" />
+        </form>
+      </div>
     );
   }
 }
