@@ -25,7 +25,7 @@ export default class Page extends React.Component {
           name="userInput"
           defaultValue="Hi!"
           ref={(input) => (this.userInput = input)}
-          style={{ width: "47%", height: "100vh", float: "left" }}
+          style={{ width: "49%", height: "90vh", float: "left" }}
         />
 
         <label>Correct Output:</label>
@@ -35,7 +35,7 @@ export default class Page extends React.Component {
           name="correctOutput"
           defaultValue="Enter the Correct Output here"
           ref={(input) => (this.correctOutput = input)}
-          style={{ width: "47%", height: "100vh", float: "left" }}
+          style={{ width: "49%", height: "90vh", float: "left" }}
         />
         <input type="submit" />
       </form>
