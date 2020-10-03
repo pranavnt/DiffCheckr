@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import diff from "text-diff";
 import OutputViewer from "./OutputViewer";
 
-//Page Component
 export default class Page extends React.Component {
   compareOutputs = (event) => {
     event.preventDefault();
