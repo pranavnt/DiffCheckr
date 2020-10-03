@@ -28,7 +28,7 @@ export default class Page extends React.Component {
       <div style={{ width: "100%", height: "100vh" }}>
         <form
           onSubmit={this.compareOutputs}
-          style={{ padding: "10px", height: "100vh", width: "100%" }}
+          style={{ height: "100vh", width: "100%", padding: "10px" }}
         >
           <label>Your Input:</label>
           <br />
@@ -37,17 +37,22 @@ export default class Page extends React.Component {
             name="userInput"
             defaultValue="Hi!"
             ref={(input) => (this.userInput = input)}
-            style={{ width: "49%", height: "90vh", float: "left" }}
+            style={{ height: "44vh", width: "100%" }}
           />
 
-          <label>Correct Output:</label>
           <br />
+          <label>Correct Output:</label>
           <input
             type="textarea"
             name="correctOutput"
             defaultValue="Enter the Correct Output here"
             ref={(input) => (this.correctOutput = input)}
-            style={{ width: "49%", height: "90vh", float: "left" }}
+            style={{
+              height: "44vh",
+              width: "100%",
+              padding: "5px",
+              whiteSpace: "pre-wrap",
+            }}
           />
           <input type="submit" />
         </form>
