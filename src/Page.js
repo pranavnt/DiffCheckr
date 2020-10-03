@@ -1,3 +1,4 @@
+//imports
 import React from "react";
 import ReactDOM from "react-dom";
 import diff from "text-diff";
