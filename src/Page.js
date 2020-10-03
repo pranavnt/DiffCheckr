@@ -25,25 +25,23 @@ export default class Page extends React.Component {
 
   render() {
     return (
-      <div style={{ width: "100%", height: "100vh" }}>
+      <div style={{ width: "100%" }}>
         <form
           onSubmit={this.compareOutputs}
           style={{ height: "100vh", width: "100%", padding: "10px" }}
         >
           <label>Your Input:</label>
           <br />
-          <input
-            type="textarea"
+          <textarea
             name="userInput"
-            defaultValue="Hi!"
+            defaultValue="Enter your input here"
             ref={(input) => (this.userInput = input)}
             style={{ height: "44vh", width: "100%" }}
           />
 
           <br />
           <label>Correct Output:</label>
-          <input
-            type="textarea"
+          <textarea
             name="correctOutput"
             defaultValue="Enter the Correct Output here"
             ref={(input) => (this.correctOutput = input)}
