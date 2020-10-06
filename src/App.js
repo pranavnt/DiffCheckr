@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "./logo.svg";
 import Page from "./Page.js";
 import "./App.css";
 
