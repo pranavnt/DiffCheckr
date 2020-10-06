@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import diff from "text-diff";
 import OutputViewer from "./OutputViewer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default class Page extends React.Component {
   compareOutputs = (event) => {
@@ -35,6 +36,7 @@ export default class Page extends React.Component {
           <br />
           <textarea
             name="userInput"
+            className="form-control"
             defaultValue="Enter your input here"
             ref={(input) => (this.userInput = input)}
             style={{ height: "44vh", width: "100%" }}
@@ -46,6 +48,7 @@ export default class Page extends React.Component {
             name="correctOutput"
             defaultValue="Enter the Correct Output here"
             ref={(input) => (this.correctOutput = input)}
+            className="form-control"
             style={{
               height: "44vh",
               width: "100%",
