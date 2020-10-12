@@ -30,7 +30,7 @@ export default class Page extends React.Component {
       <div style={{ width: "100%" }}>
         <form
           onSubmit={this.compareOutputs}
-          style={{ height: "100vh", width: "100%", padding: "10px",fontFamily: monospace }}
+          style={{ height: "100vh", width: "100%", padding: "10px" }}
         >
           <label>Your Input:</label>
           <br />
