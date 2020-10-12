@@ -30,7 +30,7 @@ export default class Page extends React.Component {
       <div style={{ width: "100%" }}>
         <form
           onSubmit={this.compareOutputs}
-          style={{ height: "100vh", width: "100%", padding: "10px" }}
+          style={{ height: "100vh", width: "100%", padding: "10px",font-family: monospace }}
         >
           <label>Your Input:</label>
           <br />
@@ -39,7 +39,13 @@ export default class Page extends React.Component {
             className="form-control"
             defaultValue="Enter your input here"
             ref={(input) => (this.userInput = input)}
-            style={{ height: "44vh", width: "100%" }}
+            style={{
+              height: "44vh",
+              width: "100%",
+              padding: "5px",
+              whiteSpace: "pre-wrap",
+              font-family: monospace
+            }}
           />
 
           <br />
@@ -54,6 +60,7 @@ export default class Page extends React.Component {
               width: "100%",
               padding: "5px",
               whiteSpace: "pre-wrap",
+              font-family: monospace
             }}
           />
           <input type="submit" />
