@@ -43,8 +43,7 @@ export default class Page extends React.Component {
               height: "44vh",
               width: "100%",
               padding: "5px",
-              whiteSpace: "pre-wrap",
-              fontFamily: monospace
+              whiteSpace: "pre-wrap"
             }}
           />
 
@@ -59,8 +58,7 @@ export default class Page extends React.Component {
               height: "44vh",
               width: "100%",
               padding: "5px",
-              whiteSpace: "pre-wrap",
-              fontFamily: monospace
+              whiteSpace: "pre-wrap"
             }}
           />
           <input type="submit" />
