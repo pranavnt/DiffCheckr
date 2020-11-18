@@ -51,7 +51,7 @@ export default class Page extends React.Component {
           <label>Correct Output:</label>
           <textarea
             name="correctOutput"
-            defaultValue="Enter the Correct Output here"
+            defaultValue="This program tells you how many days\nit will be until your next birthday.\n\nPlease enter today's date:\nWhat is the month (1-12)? 2\nWhat is the day   (1-28)? 4\n2/4 is day #35 of 365.\n\nPlease enter your birthday:\nWhat is the month (1-12)? 10\nWhat is the day   (1-31)? 12\n10/12 is day #285 of 365.\n\n\nYour next birthday is in 250 days."
             ref={(input) => (this.correctOutput = input)}
             className="form-control"
             style={{
