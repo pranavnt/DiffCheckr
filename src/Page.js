@@ -60,7 +60,21 @@ export default class Page extends React.Component {
               padding: "5px",
               whiteSpace: "pre-wrap"
             }}
-          />
+          >This program tells you how many days
+it will be until your next birthday.
+
+Please enter today's date:
+What is the month (1-12)? 2
+What is the day   (1-28)? 4
+2/4 is day #35 of 365.
+
+Please enter your birthday:
+What is the month (1-12)? 10
+What is the day   (1-31)? 12
+10/12 is day #285 of 365.
+
+Your next birthday is in 250 days.
+            </textarea>
           <input type="submit" />
         </form>
       </div>
