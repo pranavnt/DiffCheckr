@@ -1,5 +1,5 @@
 # Diffcheckr
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b5b6f02e-a11f-4456-9a09-a5919ac66e7c/deploy-status)](https://app.netlify.com/sites/diffcheckr/deploys)
+https://diff.pt5.dev
 
 ### Seamlessly compare your output with the required output 
 
